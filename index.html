@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+
+            <div class="location-container">
+                <img src="img/icon-location.png" alt=""/>
+                <div class="location"></div>
+            </div>
+
+            <div class="list-cards">
+                <div class="card active">
+                    <div>
+                        <div class="card-day"></div>
+                        <div class="card-date"></div>
+                    </div>
+
+                    <div class="section-1">
+                        <div class="card-temp"></div>
+                        <div class="card-img"></div>
+                    </div>
+
+                    <div class="section-2">
+                        <div>
+                            <div class="card-humidity">Humidity:<span></span></div>
+                            <div class="card-pressure">Pressure:<span></span></div>
+                        </div>
+                        <div>
+                            <div class="card-sunrise">Sunrise:<span></span></div>
+                            <div class="card-sunset">Sunset:<span></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="card-day"></div>
+                        <div class="card-date"></div>
+                    </div>
+
+                    <div class="section-1">
+                        <div class="card-temp"></div>
+                        <div class="card-img"></div>
+                    </div>
+
+                    <div class="section-2">
+                        <div>
+                            <div class="card-humidity">Humidity:<span></span></div>
+                            <div class="card-pressure">Pressure:<span></span></div>
+                        </div>
+                        <div>
+                            <div class="card-sunrise">Sunrise:<span></span></div>
+                            <div class="card-sunset">Sunset:<span></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="card-day"></div>
+                        <div class="card-date"></div>
+                    </div>
+
+                    <div class="section-1">
+                        <div class="card-temp"></div>
+                        <div class="card-img"></div>
+                    </div>
+
+                    <div class="section-2">
+                        <div>
+                            <div class="card-humidity">Humidity:<span></span></div>
+                            <div class="card-pressure">Pressure:<span></span></div>
+                        </div>
+                        <div>
+                            <div class="card-sunrise">Sunrise:<span></span></div>
+                            <div class="card-sunset">Sunset:<span></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="card-day"></div>
+                        <div class="card-date"></div>
+                    </div>
+
+
+                    <div class="section-1">
+                        <div class="card-temp"></div>
+                        <div class="card-img"></div>
+                    </div>
+
+                    <div class="section-2">
+                        <div>
+                            <div class="card-humidity">Humidity:<span></span></div>
+                            <div class="card-pressure">Pressure:<span></span></div>
+                        </div>
+                        <div>
+                            <div class="card-sunrise">Sunrise:<span></span></div>
+                            <div class="card-sunset">Sunset:<span></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="card-day"></div>
+                        <div class="card-date"></div>
+                    </div>
+
+                    <div class="section-1">
+                        <div class="card-temp"></div>
+                        <div class="card-img"></div>
+                    </div>
+
+                    <div class="section-2">
+                        <div>
+                            <div class="card-humidity">Humidity:<span></span></div>
+                            <div class="card-pressure">Pressure:<span></span></div>
+                        </div>
+                        <div>
+                            <div class="card-sunrise">Sunrise:<span></span></div>
+                            <div class="card-sunset">Sunset:<span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="search">
+                <div class="search-container">
+                    <input class="search-input" type="search" name="search" id="searchCity" placeholder="Search city..."/>
+                    <span class="search-icon" id="searchBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                    </span>
+                </div>
+
+                <span id="locationBtn" class="currentLocation">
+                    <img src="img/icon-location1.png" alt="Location icon" />
+                    <p>Use current location</p>
+                </span>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
