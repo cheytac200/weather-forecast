@@ -3,8 +3,8 @@ const apiKey = '39b4e6d096cbafd2fc03fa861c34f238';
 // const baseUrl = 'https://api.openweathermap.org/data/2.5/weather?';
 const baseUrl = 'https://api.openweathermap.org/data/3.0/onecall?';
 
-const geoCodingUrl = 'http://api.openweathermap.org/geo/1.0/direct?';
-const geoReverseUrl = 'http://api.openweathermap.org/geo/1.0/reverse?';
+const geoCodingUrl = 'https://api.openweathermap.org/geo/1.0/direct?';
+const geoReverseUrl = 'https://api.openweathermap.org/geo/1.0/reverse?';
 // https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&exclude=hourly,minutely&appid=39b4e6d096cbafd2fc03fa861c34f238&units=metric
 
 const searchValue = document.getElementById('searchCity');
