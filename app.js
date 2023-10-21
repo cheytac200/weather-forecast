@@ -1,17 +1,12 @@
 
 const apiKey = '39b4e6d096cbafd2fc03fa861c34f238';
-// const baseUrl = 'https://api.openweathermap.org/data/2.5/weather?';
 const baseUrl = 'https://api.openweathermap.org/data/3.0/onecall?';
-
 const geoCodingUrl = 'https://api.openweathermap.org/geo/1.0/direct?';
 const geoReverseUrl = 'https://api.openweathermap.org/geo/1.0/reverse?';
-// https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&exclude=hourly,minutely&appid=39b4e6d096cbafd2fc03fa861c34f238&units=metric
-
 const searchValue = document.getElementById('searchCity');
 const searchBtn = document.getElementById('searchBtn');
 const locationBtn = document.getElementById('locationBtn');
 const currLocation = document.querySelector('.location');
-
 
 const getCoordinates = async (city) => {
     try {
@@ -37,7 +32,7 @@ const getCity = async (lat, lon)=> {
 }
 
 const displayData = (data) => {
-    for (let i = 0; i < 5; i++) { ///forEach
+    for (let i = 0; i < 5; i++) {
         new WeatherCard(data.daily[i], i);
     }
 }
@@ -49,10 +44,8 @@ const getWeather = async (city) => {
         const response = await axios.get(baseUrl + `lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`);
 
         currLocation.innerHTML = loc;
-
         displayData(response.data)
 
-        console.log(response.data)
     } catch (error) {
         console.error(error);
     }
@@ -69,7 +62,6 @@ function getWeatherCurrentLocation(position){
 
 }
 
-
 searchBtn.addEventListener('click', () => {
     getWeather(searchValue.value);
     searchValue.value = '';
@@ -79,7 +71,7 @@ locationBtn.addEventListener('click', () => {
     navigator.geolocation.getCurrentPosition(getWeatherCurrentLocation)
 })
 
-const cards = document.querySelectorAll(".card");///SLIDER
+const cards = document.querySelectorAll(".card");//SLIDER
 
 cards.forEach(element => element.addEventListener("click", () => {
     RemoveClassActive();
